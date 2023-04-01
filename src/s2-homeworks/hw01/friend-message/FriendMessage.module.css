@@ -1,5 +1,6 @@
 .friendMessage {
     align-self: flex-start;
+    margin-bottom: 10px;
 }
 
 .friendImageAndText {
@@ -13,6 +14,7 @@
 }
 
 .friendText {
+    position: relative;
     padding: 8px 13px;
     background-color: #F5F7FB;
     border-radius: 10px;
@@ -20,7 +22,14 @@
 }
 
 .friendText:after {
-
+    content: "";
+    width: 30px;
+    height: 13px;
+    position: absolute;
+    left: -9px;
+    bottom: -1px;
+    background: #F5F7FB;
+    clip-path: polygon(0 100%, 100% 100%, 75% 100%, 25% 0);
 }
 
 .friendName {
