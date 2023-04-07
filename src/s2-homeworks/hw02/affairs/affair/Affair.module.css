@@ -1,0 +1,33 @@
+.affair {
+    flex: 0 1 48%;
+    display: flex;
+    align-items: center;
+    min-width: 185px;
+    border: 1px solid var(--color);
+    border-radius: 5px;
+}
+
+.name {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 145px;
+    height: 37px;
+    font-weight: 700;
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 37px;
+
+    background-color: transparent;
+    border: none;
+    border-left: 1.5px solid var(--color);
+
+    font-weight: 900;
+    cursor: pointer;
+}
