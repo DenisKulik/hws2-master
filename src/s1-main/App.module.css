@@ -1,13 +1,13 @@
 .App {
     --header_height: 60px;
     max-width: 1200px;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
     margin: 0 auto;
+    padding: 50px;
 }
 
 .hw {
