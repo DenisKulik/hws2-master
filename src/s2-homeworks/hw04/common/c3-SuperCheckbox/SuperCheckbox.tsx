@@ -3,7 +3,6 @@ import React, {
 } from 'react';
 import s from './SuperCheckbox.module.css';
 
-// тип пропсов обычного инпута
 type DefaultInputPropsType = DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>,
     HTMLInputElement>
 
@@ -18,40 +17,38 @@ const SuperCheckbox: React.FC<SuperCheckboxPropsType> = (
         onChangeChecked,
         className,
         spanClassName,
-        children, // в эту переменную попадёт текст, типизировать не нужно так как он затипизирован в React.FC
+        children,
         id,
 
-        ...restProps // все остальные пропсы попадут в объект restProps
+        ...restProps
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        // задачка на написание онченджа
-        if (onChangeChecked) onChangeChecked(e.currentTarget.checked);
-
-        if (onChange) onChange(e);
+        onChange?.(e);
+        onChangeChecked?.(e.currentTarget.checked);
     };
 
     const finalInputClassName = s.checkbox
         + (className ? ' ' + className : '');
 
     return (
-        <label className={ s.label }>
+        <label className={s.label}>
             <input
-                id={ id }
-                type={ 'checkbox' }
-                onChange={ onChangeCallback }
-                className={ finalInputClassName }
-                { ...restProps } // отдаём инпуту остальные пропсы если они есть (checked например там внутри)
+                id={id}
+                type={'checkbox'}
+                onChange={onChangeCallback}
+                className={finalInputClassName}
+                {...restProps}
             />
-            { children && (
+            {children && (
                 <span
-                    id={ id ? id + '-span' : undefined }
-                    className={ s.spanClassName }
+                    id={id ? `${id}-span` : undefined}
+                    className={s.spanClassName}
                 >
-                    { children }
+                    {children}
                 </span>
-            ) }
-        </label> // благодаря label нажатие на спан передастся в инпут
+            )}
+        </label>
     );
 };
 
