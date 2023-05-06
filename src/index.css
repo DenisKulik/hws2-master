@@ -1,9 +1,5 @@
 :root {
     --font-primary: 'Montserrat', sans-serif;
-    --bp-largest: 75em; /*1200 px*/
-    --bp-large: 62.5em; /*1000 px*/
-    --bp-medium: 50em; /*800 px*/
-    --bp-small: 37.5em; /*600 px*/
 }
 
 *,
@@ -26,8 +22,8 @@ body {
     box-sizing: border-box;
 }
 
-@media only screen and (max-width: var(--bp-largest)) {
+@media only screen and (max-width: 75em) {
     html {
-        font-size: 50%;
+        font-size: 50%; /*1rem = 8px*/
     }
 }
