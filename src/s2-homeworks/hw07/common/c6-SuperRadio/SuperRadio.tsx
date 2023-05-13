@@ -5,7 +5,6 @@ import React, {
     HTMLAttributes,
 } from 'react';
 import s from './SuperRadio.module.css';
-import { log } from 'util';
 
 type DefaultRadioPropsType = DetailedHTMLProps<
     InputHTMLAttributes<HTMLInputElement>,
