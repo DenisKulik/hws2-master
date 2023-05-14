@@ -28,13 +28,11 @@
 
 .text:after {
     content: "";
-    width: 30px;
-    height: 13px;
     position: absolute;
-    right: -20px;
-    bottom: -0.5px;
-    background: #0066CC;
-    clip-path: polygon(25% 0, 75% 100%, 100% 100%, 0 100%);
+    right: -10px;
+    bottom: 0;
+    border-bottom: 20px solid #0066CC;
+    border-right: 20px solid transparent;
 }
 
 .name {

@@ -23,13 +23,11 @@
 
 .friendText:after {
     content: "";
-    width: 30px;
-    height: 13px;
     position: absolute;
-    left: -9px;
-    bottom: -0.5px;
-    background: #F5F7FB;
-    clip-path: polygon(0 100%, 100% 100%, 75% 100%, 25% 0);
+    left: -10px;
+    bottom: 0;
+    border-bottom: 20px solid #F5F7FB;
+    border-left: 20px solid transparent;
 }
 
 .friendName {
