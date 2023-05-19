@@ -49,7 +49,7 @@ const HW1 = () => {
                     <Message message={message0} />
                     <FriendMessage message={friendMessage0} />
                 </div>
-                <MessageSender M={Message} />
+                <MessageSender Message={Message} />
             </div>
         </div>
     );
