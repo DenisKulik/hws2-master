@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 12px;
+    gap: 1.2rem;
 }
 
 .inputAndButtonContainer div {
@@ -13,31 +13,39 @@
 }
 
 .error {
-    margin-top: 7px;
+    margin-top: 0.7rem;
+    font-size: 1.4rem;
     color: #CC0000;
 }
 
 .input {
     width: 100%;
-    padding: 8px 12px;
+    padding: 1rem 1.2rem;
     border: 1px solid #D1D1D1;
     border-radius: 5px;
 }
 
 .input:focus {
+    outline: 1px solid lightgrey;
 }
 
 .errorInput {
     width: 100%;
-    padding: 8px 12px;
+    padding: 1rem 1.2rem;
     border: 1px solid #CC0000;
     border-radius: 5px;
 }
 
+.errorInput:focus {
+    outline: 1px solid #CC0000;
+}
+
 .button {
-    padding: 8px 24px;
+    padding: 1rem 2.5rem;
     font-weight: 600;
+    font-size: 1.6rem;
     color: white;
+    cursor: pointer;
     border: none;
     border-radius: 3px;
     background-color: #0066CC;
@@ -45,9 +53,11 @@
 
 .button:focus {
     outline: none;
+    opacity: 0.8;
 }
 
 .button:active {
+    background-color: #0078ef;
 }
 
 .button:disabled {
@@ -55,13 +65,13 @@
 }
 
 .text {
-    margin-top: 10px;
+    margin-bottom: 1rem;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     opacity: 0.5;
 }
 
 .greeting {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.4rem;
 }
