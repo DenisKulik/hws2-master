@@ -24,11 +24,15 @@
     justify-content: center;
     width: 40px;
     height: 37px;
-
     background-color: transparent;
     border: none;
-    border-left: 1.5px solid var(--color);
-
+    border-left: 1px solid var(--color);
     font-weight: 900;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 31.25em) {
+    .affair {
+        flex: 1 1 100%;
+    }
 }
