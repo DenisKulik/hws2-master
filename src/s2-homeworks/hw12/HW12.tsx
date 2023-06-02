@@ -12,21 +12,19 @@ import SuperSelect from '../hw07/common/c5-SuperSelect/SuperSelect';
 * 4 - передать пропсы в SuperSelect
 * */
 
-// @ts-ignore
-const themes = [
-    { id: 1, value: 'light' },
-    { id: 2, value: 'blue' },
-    { id: 3, value: 'dark' },
-];
+// const themes = [
+//     { id: 1, value: 'light' },
+//     { id: 2, value: 'blue' },
+//     { id: 3, value: 'dark' },
+// ];
 
 const HW12 = () => {
     // взять ид темы из редакса
     const themeId = 1;
 
-    // @ts-ignore
-    const change = (id: any) => { // дописать функцию
-
-    };
+    // const change = (id: any) => { // дописать функцию
+    //
+    // };
 
     useEffect(() => {
         document.documentElement.dataset.theme = themeId + '';
@@ -50,5 +48,4 @@ const HW12 = () => {
     );
 };
 
-// @ts-ignore
 export default HW12;
