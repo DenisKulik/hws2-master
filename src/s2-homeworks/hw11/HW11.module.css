@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.number {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
