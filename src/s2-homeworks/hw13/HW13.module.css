@@ -30,16 +30,13 @@
 }
 
 .code {
+    margin-bottom: 1rem;
     font-size: 3rem;
     font-weight: 500;
 }
 
-.text {
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-
+.text,
 .info {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 500;
 }
