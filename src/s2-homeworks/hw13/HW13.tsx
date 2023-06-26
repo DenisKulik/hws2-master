@@ -27,7 +27,7 @@ const HW13 = () => {
 
         axios
             .post(url, { success: x })
-            .then((res) => {
+            .then(() => {
                 setCode('Код 200!');
                 setImage(success200);
                 setText(`...всё ок)
