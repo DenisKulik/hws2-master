@@ -1,0 +1,45 @@
+.buttonsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.responseContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.imageContainer {
+    width: 42rem;
+    height: 32rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.textContainer {
+}
+
+.code {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.text {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.info {
+    font-size: 2rem;
+    font-weight: 500;
+}
