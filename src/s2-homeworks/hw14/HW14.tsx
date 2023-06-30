@@ -43,7 +43,7 @@ const HW14 = () => {
         const params = Object.fromEntries(searchParams);
         sendQuery(params.find || '');
         setFind(params.find || '');
-    }, [ setSearchParams ]);
+    }, [ searchParams ]);
 
     const mappedTechs = techs.map(t => (
         <div key={t} id={'hw14-tech-' + t} className={s.tech}>
